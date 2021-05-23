@@ -1,0 +1,72 @@
+<html>
+
+    <head>
+
+        <title>Javascript</title>
+
+            
+    </head>
+
+    <body>
+
+            <p>How many fingers are you holding up?</p>
+
+            <select id="yourHand">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <button id="compGuess">Computer guess</button>
+
+
+        <script type="text/javascript">
+
+
+            document.getElementById("compGuess").onclick = function() {
+
+                var yourHand = document.getElementById("yourHand").value;
+
+                var gotIt = false;
+
+                var numberOfGuesses = 1;
+
+                while (gotIt == false) {
+
+                        var compGuess = Math.random();
+
+                        compGuess = compGuess * 6;
+
+                        compGuess = Math.floor(compGuess);
+
+                        if (compGuess == yourHand && yourHand == "0") {
+
+                            gotIt = true;
+
+                            alert ("Oooohh sneaky!!, it was " + compGuess + "." + " It took me " + numberOfGuesses + " guesses.");
+
+                        } else if (compGuess == yourHand) {
+
+                            gotIt = true;
+
+                            alert ("Got it, it was " + compGuess + "." + " It took me " + numberOfGuesses + " guesses.");
+
+                        } else {
+
+                            numberOfGuesses++;
+
+                        }
+                }
+
+            }
+        
+
+        </script>
+
+
+    </body>
+
+</html>
