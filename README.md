@@ -1,4 +1,4 @@
-# firstGit.study - Learning record
-firstGitThing
+# firstGit - 
+Learning record
 
 
