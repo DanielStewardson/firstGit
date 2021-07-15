@@ -1,4 +1,5 @@
-# firstGit - 
-Learning record
+# firstGit 
+
+Some basic games from a Udemy tutorial
 
 
